@@ -10,10 +10,10 @@ export default function Home() {
       <nav className="flex justify-between items-center p-8 max-w-7xl mx-auto">
         <div className="text-xl font-bold tracking-tighter text-white">DUAL DESIGN</div>
         <div className="space-x-8 text-sm uppercase tracking-widest text-gray-400">
-          <Link href="/services" className="hover:text-blue-400 transition-colors">Services</Link>          
-          <Link href="/works" className="hover:text-blue-400 transition-colors">Our Works</Link>          
-          <Link href="/about" className="hover:text-blue-400 transition-colors">About Us</Link>         
-          <Link href="/contact" className="hover:text-blue-400 transition-colors">Contact Us</Link>          
+<Link href="/services" className="hover:text-white transition">Services</Link>          
+<Link href="/works" className="hover:text-white transition">Our Works</Link>          
+<Link href="/about" className="hover:text-white transition">About Us</Link>         
+<Link href="/contact" className="hover:text-white transition">Contact Us</Link>          
         </div>
       </nav>
 
