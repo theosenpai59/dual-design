@@ -1,32 +1,26 @@
-import React from 'react';
-
-const projects = [
-  { title: 'Digital Asset Mockups', desc: 'Deselignion side frame' },
-  { title: 'Core Web App', desc: 'Respopotes aroid live frame' },
-  { title: 'Elite Frame', desc: 'Dopoiqlion aroid live frame' },
-  { title: 'Project Alpha', desc: 'Minimalist interface design' },
-  { title: 'Mobile Suite', desc: 'Responsive mobile architecture' },
-  { title: 'Quantum Flow', desc: 'System integration logic' },
-];
-
 export default function Works() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        {/* Titre */}
-        <h1 className="text-4xl font-bold mb-16">Our Works (Bespoke Portfolio)</h1>
+    <main className="min-h-screen bg-navy-night text-white py-20 px-6">
+      <h1 className="text-4xl font-bold mb-12">OUR WORKS</h1>
+      
+      <div className="grid grid-cols-1 gap-12">
+        {/* Placeholder 1 */}
+        <div className="border border-gray-800 p-8">
+          <h3 className="text-2xl mb-4">THE DUAL DESIGN ECOSYSTEM</h3>
+          <p className="text-gray-400">
+             Our internal infrastructure. A high-velocity, full-stack digital asset framework 
+             built to deploy secure business platforms in under 10 days. 
+             (Case study coming soon...)
+          </p>
+        </div>
 
-        {/* Grille de projets */}
-        <div className="grid md:grid-cols-3 gap-10">
-          {projects.map((project, index) => (
-            <div key={index} className="group cursor-pointer">
-              {/* Image placeholder */}
-              <div className="w-full h-64 bg-gray-900 border border-gray-800 mb-4 transition-transform duration-300 group-hover:scale-[1.02]"></div>
-              
-              <h2 className="text-xl font-bold">{project.title}</h2>
-              <p className="text-gray-500">{project.desc}</p>
-            </div>
-          ))}
+        {/* Placeholder 2 */}
+        <div className="border border-gray-800 p-8 opacity-50">
+          <h3 className="text-2xl mb-4">PROJECT ALPHA (Confidential)</h3>
+          <p className="text-gray-400">
+             Developing cross-regional logistics and payment solutions for a 
+             strategic partner in the Armenian market.
+          </p>
         </div>
       </div>
     </main>
