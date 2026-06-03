@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "services": "Services",
+    "works": "Nos Projets",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "DUAL DESIGN",
+    "subtitle": "Ingénierie d'élitisme numérique",
+    "cta": "Démarrer le projet"
+  },
+  "about": {
+    "title": "POURQUOI DUAL DESIGN ?",
+    "text1": "Les agences informatiques traditionnelles sont lentes. Elles vous annoncent des mois de développement, laissent votre plateforme vulnérable et cachent vos coûts dans du code complexe dont vous n'êtes pas propriétaire.",
+    "text2": "Nous fonctionnons différemment. Dual Design est une agence de solutions numériques full-stack à haute vélocité. Nous fusionnons une ingénierie UI/UX d'élite avec des architectures backend robustes et sécurisées pour déployer des plateformes commerciales premium en 7 à 10 jours.",
+    "framework": "LE CADRE DUAL DESIGN",
+    "velocity": "Vitesse d'élite : Nous ne perdons pas de temps sur des flux de travail obsolètes. Notre équipe full-stack construit simultanément votre interface et votre logique backend.",
+    "shield": "Bouclier Entreprise : Dites adieu aux plugins vulnérables. Soutenue par une infrastructure mondiale, votre plateforme intègre une cybersécurité de qualité bancaire.",
+    "localization": "Localisation multilingue : Conçu nativement pour élargir votre portée mondiale en arménien, russe, anglais et français.",
+    "workflow": "Workflow"
+  },
+  "services": {
+    "title": "Services & Tarifs",
+    "learnMore": "En savoir plus",
+    "tier1": { "name": "Tier 1: Landing Page Promo", "price": "180 000 AMD", "f1": "Optimisation chargement mobile < 2s", "f2": "Intégration transporteurs", "f3": "Intégration Google Maps", "f4": "Widgets sociaux" },
+    "tier2": { "name": "Tier 2: Portail Business (5-10 pages)", "price": "420 000 AMD", "f1": "Structure multi-langues", "f2": "Localisation AM / RU / EN", "f3": "Référencement Google.am", "f4": "Moteur de réservation" },
+    "tier3": { "name": "Tier 3: E-Commerce", "price": "850 000 AMD", "f1": "Implémentation paiement", "f2": "Logique logistique dynamique", "f3": "Flux logistique avancé", "f4": "Documentation API" }
+  },
+  "works": {
+    "title": "NOS PROJETS",
+    "item1": { "title": "L'ÉCOSYSTÈME DUAL DESIGN", "desc": "Notre infrastructure interne. Un framework full-stack haute vélocité conçu pour déployer des plateformes sécurisées en moins de 10 jours." },
+    "item2": { "title": "PROJET ALPHA", "desc": "Développement de solutions de logistique et de paiement transfrontalières pour un partenaire stratégique sur le marché arménien." }
+  },
+  "contact": {
+    "success": { "title": "Message envoyé !", "description": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.", "backHome": "Retour à l'accueil" }
+  }
+}
