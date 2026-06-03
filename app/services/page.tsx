@@ -20,7 +20,6 @@ const tiers = [
 
 export default function Services() {
   return (
-    // Utilisation de la couleur navy-night définie dans ton theme
     <main className="min-h-screen bg-navy-night text-white py-20 px-4">
       <div className="max-w-6xl mx-auto text-center mb-16">
         <h1 className="text-5xl font-bold mb-6">Services & Pricing</h1>
@@ -37,7 +36,7 @@ export default function Services() {
                 <li key={i}>• {feature}</li>
               ))}
             </ul>
-            <button className="w-full py-3 bg-white text-navy-night font-bold uppercase tracking-wider hover:bg-gray-200 transition">
+            <button className="px-8 py-4 border border-blue-400 text-white font-bold uppercase tracking-widest hover:bg-blue-400 hover:text-white transition-all duration-300">
               Learn More
             </button>
           </div>

@@ -36,8 +36,7 @@ export default function Home() {
         <div className="mt-12">
           <Link 
             href="/contact" 
-            className="px-8 py-4 bg-white text-navy-night font-bold uppercase tracking-widest hover:bg-blue-400 transition-all duration-300"
-          >
+            className="px-8 py-4 border border-blue-400 text-white font-bold uppercase tracking-widest hover:bg-blue-400 hover:text-white transition-all duration-300"          >
             Start Project
           </Link>
         </div>
