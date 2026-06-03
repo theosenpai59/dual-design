@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -7,8 +8,7 @@ export default function Home() {
       <nav className="flex justify-between items-center p-8 max-w-7xl mx-auto">
         <div className="text-xl font-bold tracking-tighter">QUANTUM SYNERGY</div>
         <div className="space-x-8 text-sm uppercase tracking-widest text-gray-400">
-          <a href="#" className="hover:text-white transition">Services</a>
-          <a href="#" className="hover:text-white transition">Prices</a>
+<Link href="/services" className="hover:text-white transition">Services</Link>          <a href="#" className="hover:text-white transition">Prices</a>
           <a href="#" className="hover:text-white transition">Our Works</a>
           <a href="#" className="hover:text-white transition">About Us</a>
           <a href="#" className="hover:text-white transition">Contact Us</a>
