@@ -10,7 +10,7 @@ export default function Home() {
         <div className="space-x-8 text-sm uppercase tracking-widest text-gray-400">
 <Link href="/services" className="hover:text-white transition">Services</Link>          <a href="#" className="hover:text-white transition">Prices</a>
           <a href="#" className="hover:text-white transition">Our Works</a>
-          <a href="#" className="hover:text-white transition">About Us</a>
+<Link href="/about" className="hover:text-white transition">About Us</Link>          <a href="#" className="hover:text-white transition">Prices</a>
 <Link href="/contact" className="hover:text-white transition">Contact Us</Link>          <a href="#" className="hover:text-white transition">Prices</a>
         </div>
       </nav>
