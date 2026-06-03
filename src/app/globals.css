@@ -5,10 +5,8 @@
 @tailwind utilities;
 
 @theme {
-  /* On définit ta couleur ici */
   --color-navy-night: #0B1120;
   
-  /* On met à jour les variables par défaut pour ton site */
   --background: #0B1120;
   --foreground: #ededed;
 }
