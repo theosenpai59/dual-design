@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import { Link } from '@/src/i18n/routing'; 
 
 export default function Services() {
   const t = useTranslations('services');
@@ -26,9 +27,13 @@ export default function Services() {
                 <li key={i}>• {t(`${tier.key}.f${i}`)}</li>
               ))}
             </ul>
-            <button className="w-full py-4 border border-blue-400 text-white font-bold uppercase tracking-widest hover:bg-blue-400 transition-all">
+            
+            <Link 
+              href="/services/more" 
+              className="block text-center w-full py-4 border border-blue-400 text-white font-bold uppercase tracking-widest hover:bg-blue-400 transition-all"
+            >
               {t('learnMore')}
-            </button>
+            </Link>
           </div>
         ))}
       </div>

@@ -27,6 +27,12 @@
     "tier2": { "name": "Tier 2: Portail Business (5-10 pages)", "price": "420 000 AMD", "f1": "Structure multi-langues", "f2": "Localisation AM / RU / EN", "f3": "Référencement Google.am", "f4": "Moteur de réservation" },
     "tier3": { "name": "Tier 3: E-Commerce", "price": "850 000 AMD", "f1": "Implémentation paiement", "f2": "Logique logistique dynamique", "f3": "Flux logistique avancé", "f4": "Documentation API" }
   },
+ "servicesMore": {
+    "title": "Services détaillés",
+    "tier1": { "title": "Un impact dès le premier regard", "desc": "La solution ultime pour lancer une idée, un produit ou un événement. Nous nous concentrons sur une conversion maximale grâce à une interface épurée et une vitesse de chargement fulgurante. Parfait pour tester le marché sans aucune friction." },
+    "tier2": { "title": "Établissez une présence digitale durable", "desc": "Une structure robuste pour les entreprises visant une communication internationale. Avec une gestion native multilingue et un SEO optimisé pour le marché arménien, votre portail devient votre meilleur outil commercial 24h/24." },
+    "tier3": { "title": "Votre moteur de vente automatisé", "desc": "Une solution e-commerce sur mesure conçue pour gérer des flux complexes. De l'intégration des paiements sécurisés à la logistique dynamique, nous créons un écosystème technique complet qui évolue avec votre activité." }
+},
   "works": {
     "title": "NOS PROJETS",
     "item1": { "title": "L'ÉCOSYSTÈME DUAL DESIGN", "desc": "Notre infrastructure interne. Un framework full-stack haute vélocité conçu pour déployer des plateformes sécurisées en moins de 10 jours." },
