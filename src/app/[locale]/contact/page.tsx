@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from '@/src/i18n/routing';
 
 export default function Contact() {
   const router = useRouter();
@@ -9,18 +9,30 @@ export default function Contact() {
   const inputStyle = "w-full bg-transparent border-b border-gray-700 py-4 focus:border-blue-400 outline-none transition-all placeholder-gray-600 text-white";
 
   async function handleSubmit(e: any) {
-    e.preventDefault();
-    setLoading(true);
-     await fetch('/api/send', {
+  e.preventDefault();
+  setLoading(true);
 
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData.entries());
+
+  try {
+    const res = await fetch('/api/send', {
       method: 'POST',
-
-      body: JSON.stringify(FormData),
-
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
     });
+
+    if (res.ok) {
+      router.push('/contact/success');
+    } else {
+      console.error("Erreur lors de l'envoi");
+      setLoading(false);
+    }
+  } catch (error) {
+    console.error("Erreur réseau :", error);
     setLoading(false);
-    router.push('/contact/success'); 
   }
+}
 
   return (
     <main className="max-w-2xl mx-auto py-20 px-4">
