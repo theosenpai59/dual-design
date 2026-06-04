@@ -27,6 +27,12 @@
     "tier2": { "name": "Tier 2: Business Portal (5-10 pages)", "price": "420 000 AMD", "f1": "Rigid multi-language structure", "f2": "AM / RU / EN localization", "f3": "Google.am SEO mapping", "f4": "Multi-step booking engines" },
     "tier3": { "name": "Tier 3: E-Commerce Store", "price": "850 000 AMD", "f1": "Payment gateway implementation", "f2": "Dynamic shipping logic", "f3": "Advanced logistics flow", "f4": "Full API documentation" }
   },
+  "servicesMore": {
+    "title": "Detailed Services",
+    "tier1": { "title": "Impact at First Sight", "desc": "The ultimate solution to launch an idea, product, or event. We focus on maximum conversion through a clean interface and lightning-fast load times. Perfect for market testing with zero friction." },
+    "tier2": { "title": "Establish Sustainable Digital Presence", "desc": "A robust structure for businesses aiming for international communication. With native multi-language management and SEO optimized for the Armenian market, your portal becomes your best 24/7 sales tool." },
+    "tier3": { "title": "Your Automated Sales Engine", "desc": "A bespoke e-commerce solution built to manage complex flows. From secure payment integration to dynamic logistics, we create a complete technical ecosystem that scales with your business." }
+  },
   "works": {
     "title": "OUR WORKS",
     "item1": { "title": "THE DUAL DESIGN ECOSYSTEM", "desc": "Our internal infrastructure. A high-velocity, full-stack digital asset framework built to deploy secure business platforms in under 10 days." },
