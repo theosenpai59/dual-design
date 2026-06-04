@@ -3,7 +3,9 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
 import Navbar from '@/src/components/Navbar';
+import Footer from '@/src/components/Footer';
 import '../globals.css';
+
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -27,7 +29,8 @@ export default async function LocaleLayout({
     <NextIntlClientProvider messages={messages}>
       <div className="bg-navy-night text-gray-100 min-h-screen">
         <Navbar />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main> 
+        <Footer />
       </div>
     </NextIntlClientProvider>
   );
