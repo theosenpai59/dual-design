@@ -9,7 +9,7 @@ export async function POST(req: Request) {
   try {
     const data = await resend.emails.send({
       from: 'onboarding@resend.dev', //domaine
-      to: 'theo.delaudedu59@gmail.com',  
+      to: 'aleyanlyov02282004@gmail',  
       subject: 'Nouveau projet depuis le site',
       text: `Nom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\nMessage: ${message}`,
     });
