@@ -2,6 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/src/i18n/routing';
+import Navbar from '@/src/components/Navbar';
 import '../globals.css';
 
 export function generateStaticParams() {
@@ -24,7 +25,10 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      {children}
+      <div className="bg-navy-night text-gray-100 min-h-screen">
+        <Navbar />
+        <main>{children}</main>
+      </div>
     </NextIntlClientProvider>
   );
 }
