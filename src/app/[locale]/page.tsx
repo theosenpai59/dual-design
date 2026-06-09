@@ -1,5 +1,22 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/src/i18n/routing'; 
+import { getTranslations } from 'next-intl/server';
+import { Metadata } from 'next';
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'home' });
+
+  return {
+    title: t('metaTitle'),
+    description: t('metaDescription'),
+  };
+}
+
 
 export default function Home() {
   const t = useTranslations('home');
