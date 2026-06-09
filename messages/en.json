@@ -42,7 +42,7 @@
     "item2": { "title": "PROJECT ALPHA", "desc": "Developing cross-regional logistics and payment solutions for a strategic partner in the Armenian market." }
   },
   
-  "Contact": {
+  "contact": {
     "metaTitle": "Contact Dual Design | Digital Agency",
     "metaDescription": "Let's discuss your project vision. Contact Dual Design for your high-performance web needs.",
     "namePlaceholder": "NAME",
