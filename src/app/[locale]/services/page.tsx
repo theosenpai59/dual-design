@@ -13,7 +13,7 @@ export default function Services() {
   return (
     <main className="min-h-screen bg-navy-night text-white py-20 px-4">
       <div className="max-w-6xl mx-auto text-center mb-16">
-        <h1 className="text-5xl font-bold mb-6">{t('title')}</h1>
+        <h1 className="text-5xl font-bold mb-6 break-words hyphens-auto">{t('title')}</h1>
       </div>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
