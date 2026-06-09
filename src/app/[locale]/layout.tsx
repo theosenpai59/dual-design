@@ -5,6 +5,8 @@ import { routing } from '@/src/i18n/routing';
 import Navbar from '@/src/components/Navbar';
 import Footer from '@/src/components/Footer';
 import '../globals.css';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 export function generateStaticParams() {
@@ -28,10 +30,12 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider messages={messages}>
       <div className="bg-navy-night text-gray-100 min-h-screen">
-        <Navbar />
+        <Navbar locale={locale} />
         <main className="flex-grow">{children}</main> 
         <Footer />
       </div>
+      <Analytics />
+          <SpeedInsights />
     </NextIntlClientProvider>
   );
 }
