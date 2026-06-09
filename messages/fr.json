@@ -8,7 +8,10 @@
   "home": {
     "title": "DUAL DESIGN",
     "subtitle": "Là où la logique rencontre l'imagination",
-    "cta": "Démarrer le projet"
+    "cta": "Démarrer le projet",
+    "metaTitle" : "Dual Design | Agence de création de sites web haute performance",
+    "metaDescription": "Dual Design transforme votre vision en expériences digitales innovantes. Développement web sur mesure et design d'exception en Arménie."
+  
   },
   "about": {
     "title": "POURQUOI DUAL DESIGN ?",
@@ -39,6 +42,8 @@
     "item2": { "title": "PROJET ALPHA", "desc": "Développement de solutions de logistique et de paiement transfrontalières pour un partenaire stratégique sur le marché arménien." }
   },
   "contact": {
-    "success": { "title": "Message envoyé !", "description": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.", "backHome": "Retour à l'accueil" }
+    "success": { "title": "Message envoyé !", "description": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.", "backHome": "Retour à l'accueil"},
+     "metaTitle": "Contactez Dual Design | Agence Digitale",
+    "metaDescription": "Discutons de votre vision. Contactez Dual Design pour vos projets web."
   }
 }
