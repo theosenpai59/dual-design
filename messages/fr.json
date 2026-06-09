@@ -41,9 +41,15 @@
     "item1": { "title": "L'ÉCOSYSTÈME DUAL DESIGN", "desc": "Notre infrastructure interne. Un framework full-stack haute vélocité conçu pour déployer des plateformes sécurisées en moins de 10 jours." },
     "item2": { "title": "PROJET ALPHA", "desc": "Développement de solutions de logistique et de paiement transfrontalières pour un partenaire stratégique sur le marché arménien." }
   },
+  
   "contact": {
-    "success": { "title": "Message envoyé !", "description": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.", "backHome": "Retour à l'accueil"},
-     "metaTitle": "Contactez Dual Design | Agence Digitale",
-    "metaDescription": "Discutons de votre vision. Contactez Dual Design pour vos projets web."
-  }
+  "namePlaceholder": "NOM",
+  "phonePlaceholder": "TÉLÉPHONE",
+  "emailPlaceholder": "EMAIL",
+  "briefPlaceholder": "DÉTAILS DU PROJET",
+  "sending": "ENVOI...",
+  "send": "ENVOYER LE MESSAGE",
+  "metaTitle": "Contactez Dual Design | Agence Digitale",
+  "metaDescription": "..."
+}
 }

@@ -41,9 +41,15 @@
     "item1": { "title": "THE DUAL DESIGN ECOSYSTEM", "desc": "Our internal infrastructure. A high-velocity, full-stack digital asset framework built to deploy secure business platforms in under 10 days." },
     "item2": { "title": "PROJECT ALPHA", "desc": "Developing cross-regional logistics and payment solutions for a strategic partner in the Armenian market." }
   },
-  "contact": {
-    "success": { "title": "Message Sent!", "description": "We have received your project brief and will be in touch shortly.", "backHome": "Back to Home" },
+  
+  "Contact": {
     "metaTitle": "Contact Dual Design | Digital Agency",
-    "metaDescription": "Let's discuss your project vision. Contact Dual Design for your high-performance web needs."
+    "metaDescription": "Let's discuss your project vision. Contact Dual Design for your high-performance web needs.",
+    "namePlaceholder": "NAME",
+    "phonePlaceholder": "PHONE",
+    "emailPlaceholder": "EMAIL",
+    "briefPlaceholder": "PROJECT BRIEF",
+    "sending": "SENDING...",
+    "send": "SEND MESSAGE"
   }
 }
