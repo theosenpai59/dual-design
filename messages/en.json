@@ -8,7 +8,10 @@
   "home": {
     "title": "DUAL DESIGN",
     "subtitle": "Where Logic Meets Imagination",
-    "cta": "Start Project"
+    "cta": "Start Project",
+    "metaTitle": "Dual Design | High-Performance Web Development Agency",
+    "metaDescription": "Dual Design turns your vision into innovative digital experiences. Custom web development and exceptional design in Armenia."
+
   },
   "about": {
     "title": "WHY DUAL DESIGN?",
@@ -38,7 +41,15 @@
     "item2": "RESTAURANT",
     "item3": "CAFE"
   },
+  
   "contact": {
-    "success": { "title": "Message Sent!", "description": "We have received your project brief and will be in touch shortly.", "backHome": "Back to Home" }
+    "metaTitle": "Contact Dual Design | Digital Agency",
+    "metaDescription": "Let's discuss your project vision. Contact Dual Design for your high-performance web needs.",
+    "namePlaceholder": "NAME",
+    "phonePlaceholder": "PHONE",
+    "emailPlaceholder": "EMAIL",
+    "briefPlaceholder": "PROJECT BRIEF",
+    "sending": "SENDING...",
+    "send": "SEND MESSAGE"
   }
 }
