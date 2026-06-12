@@ -1,8 +1,8 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import Navbar from '@/src/components/Navbar';
-import Footer from '@/src/components/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 export default function LayoutContent({
   children,
@@ -11,8 +11,7 @@ export default function LayoutContent({
 }) {
   const pathname = usePathname();
 
-  const isWorksPage =
-    pathname.endsWith('/works');
+  const isWorksPage = pathname.includes('/works');
 
   return (
     <div className="bg-navy-night text-gray-100 min-h-screen">

@@ -12,7 +12,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  await params;
 
   const messages = await getMessages();
 
@@ -21,13 +21,9 @@ export default async function LocaleLayout({
       <LayoutContent>
         {children}
       </LayoutContent>
-      <div className="bg-navy-night text-gray-100 min-h-screen">
-        <Navbar locale={locale} />
-        <main className="flex-grow">{children}</main> 
-        <Footer />
-      </div>
+
       <Analytics />
-          <SpeedInsights />
+      <SpeedInsights />
     </NextIntlClientProvider>
   );
 }
