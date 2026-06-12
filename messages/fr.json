@@ -34,9 +34,9 @@
     "tier3": { "title": "Votre moteur de vente automatisé", "desc": "Une solution e-commerce sur mesure conçue pour gérer des flux complexes. De l'intégration des paiements sécurisés à la logistique dynamique, nous créons un écosystème technique complet qui évolue avec votre activité." }
 },
   "works": {
-    "title": "NOS PROJETS",
-    "item1": { "title": "L'ÉCOSYSTÈME DUAL DESIGN", "desc": "Notre infrastructure interne. Un framework full-stack haute vélocité conçu pour déployer des plateformes sécurisées en moins de 10 jours." },
-    "item2": { "title": "PROJET ALPHA", "desc": "Développement de solutions de logistique et de paiement transfrontalières pour un partenaire stratégique sur le marché arménien." }
+    "item1": "SALLE DE SPORT",
+    "item2": "RESTAURANT",
+    "item3": "CAFE"
   },
   "contact": {
     "success": { "title": "Message envoyé !", "description": "Nous avons bien reçu votre demande et nous vous contacterons sous peu.", "backHome": "Retour à l'accueil" }

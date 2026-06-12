@@ -1,4 +1,3 @@
-import Navbar from '@/src/components/Navbar';
 import WorksGrid from '@/src/components/WorksGrid';
 
 export default function WorksPage() {
