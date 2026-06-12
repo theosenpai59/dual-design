@@ -1,17 +1,10 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
-import { routing } from '@/src/i18n/routing';
-import Navbar from '@/src/components/Navbar';
-import Footer from '@/src/components/Footer';
 import '../globals.css';
+import LayoutContent from '@/src/components/LayoutContent';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-}
 export default async function LocaleLayout({
   children,
   params
@@ -21,14 +14,13 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
-    notFound();
-  }
-
   const messages = await getMessages();
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <LayoutContent>
+        {children}
+      </LayoutContent>
       <div className="bg-navy-night text-gray-100 min-h-screen">
         <Navbar locale={locale} />
         <main className="flex-grow">{children}</main> 

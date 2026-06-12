@@ -37,9 +37,9 @@
     "tier3": { "title": "Your Automated Sales Engine", "desc": "A bespoke e-commerce solution built to manage complex flows. From secure payment integration to dynamic logistics, we create a complete technical ecosystem that scales with your business." }
   },
   "works": {
-    "title": "OUR WORKS",
-    "item1": { "title": "THE DUAL DESIGN ECOSYSTEM", "desc": "Our internal infrastructure. A high-velocity, full-stack digital asset framework built to deploy secure business platforms in under 10 days." },
-    "item2": { "title": "PROJECT ALPHA", "desc": "Developing cross-regional logistics and payment solutions for a strategic partner in the Armenian market." }
+    "item1": "GYM",
+    "item2": "RESTAURANT",
+    "item3": "CAFE"
   },
   
   "contact": {
