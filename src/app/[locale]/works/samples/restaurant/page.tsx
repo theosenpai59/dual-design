@@ -55,7 +55,7 @@ export default function RestaurantMenu() {
       <div className="absolute inset-0 bg-gradient-to-br from-[#08131f]/60 via-[#06111D]/40 to-black/70" />
 
       <div
-  className="absolute top-0 left-0 w-[500px] h-[500px] z-50"
+  className="absolute top-0 left-0 w-[250px] h-[250px] z-50"
   style={{
     backgroundImage: "url('/sakura-top-left.svg')",
     backgroundRepeat: 'no-repeat',
@@ -65,7 +65,7 @@ export default function RestaurantMenu() {
 
       {/* Sakura bas droite */}
       <div
-        className="absolute bottom-0 right-0 w-[500px] h-[500px] z-50"
+        className="absolute bottom-0 right-0 w-[250px] h-[250px] z-50"
         style={{
           backgroundImage: "url('/sakura-bottom-right.svg')",
           backgroundRepeat: 'no-repeat',
