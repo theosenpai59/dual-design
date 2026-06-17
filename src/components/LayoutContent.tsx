@@ -12,17 +12,20 @@ export default function LayoutContent({
   const pathname = usePathname();
 
   const isWorksPage = pathname.includes('/works');
+  const isSamplesPage = pathname.includes('/samples')
 
   return (
     <div className="bg-navy-night text-gray-100 min-h-screen">
-      <Navbar
-        isTransparent={isWorksPage}
-        hideLogo={isWorksPage}
-      />
+      {!isSamplesPage && (
+        <Navbar
+          isTransparent={isWorksPage}
+          hideLogo={isWorksPage}
+        />
+      )}
 
       <main>{children}</main>
 
-      <Footer />
-    </div>
+    {!isSamplesPage && <Footer />}    
+  </div>
   );
 }
