@@ -51,5 +51,39 @@
     "briefPlaceholder": "PROJECT BRIEF",
     "sending": "SENDING...",
     "send": "SEND MESSAGE"
+  },
+  "sample": {
+    "restaurant": {
+      "title": "Restaurant Menu",
+      "categories": {
+        "entrées": {
+          "title": "Starters",
+          "items": [
+            "Vegetable spring rolls",
+            "Chicken gyoza",
+            "Wakame salad"
+          ]
+        },
+        "plats": {
+          "title": "Main Courses",
+          "items": [
+            "Shrimp Pad Thai",
+            "Red beef curry",
+            "Stir-fried rice with vegetables"
+          ]
+        },
+        "desserts": {
+          "title": "Desserts",
+          "items": [
+            "Mochi ice cream",
+            "Coconut pearls"
+          ]
+        }
+      },
+      "nav": {
+        "previous": "Previous",
+        "next": "Next"
+      }
+    }
   }
 }

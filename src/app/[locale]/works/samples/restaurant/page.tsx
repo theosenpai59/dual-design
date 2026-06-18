@@ -2,36 +2,20 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import "@fontsource/zen-old-mincho/400.css";
 import "@fontsource/zen-old-mincho/700.css";
 
-export default function RestaurantMenu() {
-  const steps = [
-    {
-      title: 'Entrées',
-      items: [
-        'Nems aux légumes',
-        'Gyoza au poulet',
-        'Salade Wakame',
-      ],
-    },
-    {
-      title: 'Plats',
-      items: [
-        'Pad Thaï crevettes',
-        'Curry rouge de bœuf',
-        'Riz sauté aux légumes',
-      ],
-    },
-    {
-      title: 'Desserts',
-      items: [
-        'Mochi glacé',
-        'Perles de coco',
-      ],
-    },
-  ];
+// On mappe les clés de catégories pour correspondre à ton fichier JSON proprement
+const menuSteps = [
+  { key: 'entrées', count: 3 },
+  { key: 'plats', count: 3 },
+  { key: 'desserts', count: 2 }
+];
 
+export default function RestaurantMenu() {
+  const t = useTranslations('sample.restaurant');
+  
   const [currentPage, setCurrentPage] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -39,6 +23,15 @@ export default function RestaurantMenu() {
     setDirection(newIndex > currentPage ? 1 : -1);
     setCurrentPage(newIndex);
   };
+
+  const currentStep = menuSteps[currentPage];
+  const categoryKey = currentStep.key as 'entrées' | 'plats' | 'desserts';
+  
+  // Récupération dynamique du titre de la section et des éléments traduits
+  const sectionTitle = t(`categories.${categoryKey}.title`);
+  const items = Array.from({ length: currentStep.count }, (_, i) => 
+    t(`categories.${categoryKey}.items.${i}`)
+  );
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#06111D]">
@@ -54,18 +47,19 @@ export default function RestaurantMenu() {
       {/* Dégradé premium */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#08131f]/60 via-[#06111D]/40 to-black/70" />
 
+      {/* Sakura haut gauche */}
       <div
-  className="absolute top-0 left-0 w-[500px] h-[500px] z-50"
-  style={{
-    backgroundImage: "url('/sakura-top-left.svg')",
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'contain',
-  }}
-/>
+        className="absolute top-0 left-0 w-[250px] h-[250px] z-50 pointer-events-none"
+        style={{
+          backgroundImage: "url('/sakura-top-left.svg')",
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'contain',
+        }}
+      />
 
       {/* Sakura bas droite */}
       <div
-        className="absolute bottom-0 right-0 w-[500px] h-[500px] z-50"
+        className="absolute bottom-0 right-0 w-[250px] h-[250px] z-50 pointer-events-none"
         style={{
           backgroundImage: "url('/sakura-bottom-right.svg')",
           backgroundRepeat: 'no-repeat',
@@ -147,17 +141,17 @@ export default function RestaurantMenu() {
                       fontFamily: 'Zen Old Mincho, serif',
                     }}
                   >
-                    {steps[currentPage].title}
+                    {sectionTitle}
                   </h1>
                 </div>
               </header>
 
-              {/* Contenu */}
+              {/* Contenu (Plats) */}
               <div className="flex-1 flex items-center justify-center py-16">
                 <ul className="space-y-8 text-center">
-                  {steps[currentPage].items.map((item) => (
+                  {items.map((item, index) => (
                     <li
-                      key={item}
+                      key={index}
                       className="
                         text-2xl
                         text-stone-800
@@ -189,14 +183,14 @@ export default function RestaurantMenu() {
                       disabled:opacity-20
                     "
                   >
-                    Précédent
+                    {t('nav.previous')}
                   </button>
 
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-px bg-[#D7C6A0]" />
 
                     <span className="text-xs tracking-[0.3em] text-stone-500">
-                      {currentPage + 1} / {steps.length}
+                      {currentPage + 1} / {menuSteps.length}
                     </span>
 
                     <div className="w-10 h-px bg-[#D7C6A0]" />
@@ -204,7 +198,7 @@ export default function RestaurantMenu() {
 
                   <button
                     onClick={() => changePage(currentPage + 1)}
-                    disabled={currentPage === steps.length - 1}
+                    disabled={currentPage === menuSteps.length - 1}
                     className="
                       uppercase
                       tracking-[0.25em]
@@ -215,7 +209,7 @@ export default function RestaurantMenu() {
                       disabled:opacity-20
                     "
                   >
-                    Suivant
+                    {t('nav.next')}
                   </button>
                 </div>
               </footer>
