@@ -51,5 +51,40 @@
   "send": "ENVOYER LE MESSAGE",
   "metaTitle": "Contactez Dual Design | Agence Digitale",
   "metaDescription": "..."
-}
+},
+
+  "sample": {
+    "restaurant": {
+      "title": "La Carte du Restaurant",
+      "categories": {
+        "entrées": {
+          "title": "Entrées",
+          "items": [
+            "Nems aux légumes",
+            "Gyoza au poulet",
+            "Salade Wakame"
+          ]
+        },
+        "plats": {
+          "title": "Plats",
+          "items": [
+            "Pad Thaï crevettes",
+            "Curry rouge de bœuf",
+            "Riz sauté aux légumes"
+          ]
+        },
+        "desserts": {
+          "title": "Desserts",
+          "items": [
+            "Mochi glacé",
+            "Perles de coco"
+          ]
+        }
+      },
+      "nav": {
+        "previous": "Précédent",
+        "next": "Suivant"
+      }
+    }
+  }
 }
